@@ -12,12 +12,12 @@ operating model that can run itself end-to-end.
 ## Relationship to other repos
 
 ```
-   ┌──────────────────────────────────────────────┐
-   │       autonomous-enterprise  (PUBLIC)        │  ← you are here
-   │       umbrella / cross-cutting               │
-   └──────────────┬───────────────────────────────┘
-                  │ composes
-   ┌──────────────┼───────────────────────────────────────────────┐
+         ┌──────────────────────────────────────────────┐
+         │       autonomous-enterprise  (PUBLIC)        │  ← you are here
+         │       umbrella / cross-cutting               │
+         └────────────────────────┬─────────────────────┘
+                                  │ composes
+   ┌──────────────┌───────────────┌────────────────┌──────────────┐
    │              │                                               │
    ▼              ▼               ▼                ▼              ▼
 autonomous-    autonomous-     autonomous-       autonomous-    dea-catalog-*
